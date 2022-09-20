@@ -1,0 +1,43 @@
+.transactionHistory {
+  text-align: center;
+  width: 100%;
+}
+
+.transactionHistory thead {
+  width: 100%;
+  background-color: brown;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.transactionHistory tbody tr {
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 2px 2px 2px 2px;
+}
+
+.item {
+}
+
+.itemType {
+  text-align: start;
+  padding-left: 20px;
+}
+
+.invoice {
+  background-color: var(--color-yellow);
+}
+
+.payment {
+  background-color: var(--color-blue);
+}
+
+.withdrawal {
+  background-color: var(--color-red);
+}
+
+.deposit {
+  background-color: var(--color-green);
+}
