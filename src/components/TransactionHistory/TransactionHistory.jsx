@@ -9,6 +9,22 @@ export const TransactionHistory = ({ title, items }) => {
       <div className={commonStyles.container}>
         <table className={css.transactionHistory}>
           <thead>
+            {/* <tr>
+              {items.forEach(item => {
+                const data = Object.entries(item);
+                const keyArr = [];
+                data.forEach(([key, value]) => {
+                  if (key !== 'id' && !keyArr.includes(key)) {
+                    <th>{key}</th>;
+                    //     keyArr.push(key);
+                  }
+                });
+                // for (let index = 0; index < keyArr.length; index++) {
+                //   const element = keyArr[index];
+                //   return <th>{element}</th>;
+                // }
+              })}
+            </tr> */}
             <tr>
               <th>Type</th>
               <th>Amount</th>
@@ -37,13 +53,13 @@ export const TransactionHistory = ({ title, items }) => {
   );
 };
 
-TransactionHistory.propTypes = {
-  items: PropTypes.arrayOf(
-    PropTypes.exact({
-      id: PropTypes.string.isRequired,
-      type: PropTypes.string.isRequired,
-      amount: PropTypes.string.isRequired,
-      currency: PropTypes.string.isRequired,
-    })
-  ),
-};
+// TransactionHistory.propTypes = {
+//   items: PropTypes.arrayOf(
+//     PropTypes.exact({
+//       id: PropTypes.string.isRequired,
+//       type: PropTypes.string.isRequired,
+//       amount: PropTypes.string.isRequired,
+//       currency: PropTypes.string.isRequired,
+//     })
+//   ),
+// };
